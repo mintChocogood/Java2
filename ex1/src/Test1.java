@@ -1,5 +1,5 @@
 import java.util.Arrays;
-
+@Log4j2
 public class Test1 {
 
 	public static void main(String[] args) {
