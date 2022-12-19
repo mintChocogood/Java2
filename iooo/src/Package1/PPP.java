@@ -11,8 +11,6 @@ public class PPP {
 	public static void main(String[] args) {
    
 	Parent parent = new Parent() { // 다형성-1
-		
-		
 	 @Override
 	public void parentMethod() {
 		log.info("아빠메소드 호출");
