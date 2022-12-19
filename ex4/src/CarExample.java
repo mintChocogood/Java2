@@ -1,11 +1,13 @@
-
+import lombok.extern.log4j.Log4j2;
+	@Log4j2
 public class CarExample {
+
 
 	public static void main(String[] args) {
 
 		// 1. 객체생성
 		Car myCar = new Car();
-		
+		log.info("우후");
 		// *** 생성된 객체의 필드의 값을 사용하는 방법 : < 참조변수.필드명 > (***)
 		// '.' 도트연산자: 객체멤버 참조(=사용) 연산자
 		
