@@ -31,12 +31,6 @@ public class ArraysAsListExample {
 		
 //		---
 		
-		
-		
-		
-		
-		
-		
 	} // main
 
 } // end class

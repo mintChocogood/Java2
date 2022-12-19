@@ -15,7 +15,7 @@ public class HashSetExample2 {
 		
 		// 구슬주머니에 구슬(회원객체) 추가
 		set.add(new Member("홍길동", 30));		// 이름, 나이
-		set.add(new Member("홍길동", 31));		// Ditto
+		set.add(new Member("홍길동", 30));		// Ditto
 		
 //		log.info(set.getClass().getName());
 		log.info(set);

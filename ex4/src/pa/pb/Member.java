@@ -13,13 +13,15 @@ import lombok.extern.log4j.Log4j2;
 public class Member {	// 회원을 모델링해서 만든 클래스
 	public String name;
 	public int age;
-
-//	public Member(String name, int age) {
-//		log.trace("생성자({}, {}) 실행됨", name, age);
-//		
-//		this.name = name;
-//		this.age = age;
-//	} // 생성자
+	public int ssn;
+	public int phonenumber;
+	
+	public Member(String name, int age) {
+		log.trace("생성자({}, {}) 실행됨", name, age);
+		
+		this.name = name;
+		this.age = age;
+	} // 생성자
 	
 //	@Override
 //	public boolean equals(Object obj) {
@@ -39,6 +41,6 @@ public class Member {	// 회원을 모델링해서 만든 클래스
 //		log.trace("해시코드() 실행됨.");
 //		
 //		return this.name.hashCode() + this.age;
-//	} // hashCode
+//	} // hashCode			// 위의 주석처리된 것들은 @EqualsAndHashCode로 해결가능
 	
 } // end class
