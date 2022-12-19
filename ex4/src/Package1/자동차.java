@@ -11,7 +11,7 @@ public class 자동차 {
 		} // speedup
 		
 		// 2. final 메소드 - 자식클래스에서 메소드 재정의 불허!
-		public final void stop() {
+		public void stop() {
 			System.out.println("자동차 정지 호출");
 					
 			speed = 0;

@@ -9,6 +9,7 @@ public class Person2 {
 	public Person2(final String ssn, final String name, final int age) {
 		this.ssn = ssn;
 		this.name = name;
+		this.age = age;
 		
 //		this.age = age;  // 지역변수
 //		age = 18;

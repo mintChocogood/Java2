@@ -114,7 +114,7 @@ public class SwitchExpressionExapm {
 	 // default          -> { 
 	//	  yield "Giseo"; 
 		  } // Ditto. (같다)
-	}; // switch expression
+	} // switch expression
 	
 	
 	
@@ -126,4 +126,3 @@ public class SwitchExpressionExapm {
 		
 	} // main
 	
-} // end class

@@ -2,6 +2,8 @@ package Package1;
 
 
 public class Service2 {
+	
+	
 	private String name;
 	private int price;
 	

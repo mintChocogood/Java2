@@ -1,7 +1,7 @@
 
 public class TTT5 {
 
-	public static void main(String... args) {
+	public static void main(String... args) throws ClassNotFoundException {
 		
 		// 특정 클래스에 대한 메소드 영역의 "Clazz객체"의 주소(레퍼런스, 참조)를
 		// 얻어내는 3가지 방법을 배웁니다. 꼭 이 3가지 방법 모두 많이 연습하시기

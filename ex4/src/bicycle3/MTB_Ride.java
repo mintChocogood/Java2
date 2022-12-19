@@ -37,7 +37,7 @@ public class MTB_Ride {
 		
 		// 커브길
 		log.info("커브길에서 방향을 전환합니다.");
-		mtb.turnRight(1.3);		// 방향을 전환합니다
+		mtb.holdHandle(-2.3);		// 방향을 전환합니다
 		
 		// 정상도착
 		log.info("정상에 도착하여 잠시 휴식을 취합니다.");

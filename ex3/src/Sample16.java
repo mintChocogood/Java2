@@ -1,6 +1,11 @@
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+//@AllArgsConstructor
+@NoArgsConstructor
 
 public class Sample16 {
-
+	
 	public static void main(String[] args) {
 		
 		char c1 = 'A' + 1;   // 여기서, '+'는 산술덧셈연산자

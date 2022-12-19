@@ -38,7 +38,7 @@ public class Calculator2Example {
 		System.out.println(name);                   // XX : 컴파일 오류
 	} // main
 	
-	String name;		 // 인스턴스 필드
+	static String name;		 // 인스턴스 필드
 	static int age;      // 정적 필드
 	
 	

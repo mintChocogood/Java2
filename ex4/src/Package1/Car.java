@@ -10,15 +10,15 @@ public class Car {
 		;;
 	} // 기본 생성자
 
-	public int getSpeed() {
+	public int getSpeed()throws Throwable {
 		return speed;
 	}
 
-	public void setSpeed(int speed) {
+	public void setSpeed(int speed)throws Throwable {
 		this.speed = speed;
 	}
 
-	public boolean isStop() {
+	public boolean isStop() throws Throwable {
 		return stop;
 	}
 
