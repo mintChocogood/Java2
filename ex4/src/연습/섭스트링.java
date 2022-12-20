@@ -7,9 +7,9 @@ public class 섭스트링 {
 	public static String getSmallestAndLargest(String s, int k) {
         String S = s.substring(0, k);
         String L = s.substring(0, k);
-        
+        String temp;
         for(k = 1; k<s.length()-1; k++) {
-        	
+        	temp = s.substring(0, k);
         } // for
         
         
@@ -20,7 +20,7 @@ public class 섭스트링 {
 		Scanner sc = new Scanner(System.in);
 		
 		String input = sc.nextLine();
-		System.out.println();
+		System.out.println(">>입력");
 		
 	} // main
 } // end class
