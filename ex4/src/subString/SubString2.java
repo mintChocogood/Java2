@@ -52,8 +52,9 @@ Scanner sc = new Scanner(System.in);
         
         try(sc;){
         	String first = sc.nextLine();
-            int len = sc.nextInt();
+        	int len = sc.nextInt();
             String res = SubString2.printSubStr2(first, len);
+            
             System.out.println(res);
         }catch(Exception e) {
         	

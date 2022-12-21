@@ -1,6 +1,7 @@
 package subString;
 
 import java.io.*;
+
 import java.util.*;
 
 public class SubString3 {
@@ -12,7 +13,10 @@ public class SubString3 {
         ArrayList<String> list1 = new ArrayList<>();
         for (int i=0;i<first.length()-len+1;i++){
             list1.add(first.substring(i,i+len));
+            
+            
         }
+        System.out.println(list1);
         Collections.sort(list1);
         System.out.println(list1.get(0));
         System.out.println(list1.get(list1.size()-1));
