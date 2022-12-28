@@ -1,32 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration>
-	<properties>
-		<property name="name">app</property>
-		<property name="pattern">%d{yyyy-MM-dd HH:mm:ss.SSS} | %-5.5p | %-10.10t | %-20.20C:%-5.5L | %msg%n</property>
-<!-- 
-It will look like that:
-2013-04-03 07:37:51.993 | WARN  | main       | lnetgateway.Server:56    | My app is logging stuff
--->
-	</properties>
-	<appenders>
-		<Console name="Console" target="SYSTEM_OUT">
-			<PatternLayout pattern="${pattern}"/>
-		</Console>
-		<RollingFile name="RollingFile" fileName="logs/${name}.log"
-				 filePattern="logs/$${date:yyyy-MM}/${name}-%d{yyyy-MM-dd}-%i.log.gz">
-			<PatternLayout>
-				<pattern>${pattern}</pattern>
-			</PatternLayout>
-			<Policies>
-				<TimeBasedTriggeringPolicy /><!-- Rotated everyday -->
-				<SizeBasedTriggeringPolicy size="100 MB"/> <!-- Or every 100 MB -->
-			</Policies>
-		</RollingFile>
-	</appenders>
-	<loggers>
-		<root level="debug"> <!-- We log everything -->
-			<appender-ref ref="Console"/> <!-- To console -->
-			<appender-ref ref="RollingFile"/> <!-- And to a rotated file -->
-		</root>
-	</loggers>
-</configuration>
+
+
+<Configuration status="WARN" monitorInterval="30">
+    <Properties>
+        <Property name="LOG_PATTERN">%d{HH:mm:ss.SSS} %5p --- [%10.50t] %-1.50c{1.}.%-1.20M:%L: %m%n%ex</Property>
+    </Properties>
+
+    
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+    </Appenders>
+
+
+    <Loggers>
+
+        <Root level="trace">
+            <AppenderRef ref="ConsoleAppender" />
+        </Root>
+        
+    </Loggers>
+</Configuration>

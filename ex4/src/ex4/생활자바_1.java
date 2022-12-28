@@ -1,8 +1,5 @@
 package ex4;
 
-import lombok.NoArgsConstructor;
-
-@NoArgsConstructor
 public class 생활자바_1 {
 
 	public static void main(String[] args) {
