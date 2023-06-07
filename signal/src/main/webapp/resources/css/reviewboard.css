@@ -1,0 +1,231 @@
+@charset "utf8";
+
+/* css 초기화 */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    vertical-align: top;
+    /* width: 33.3%; */
+}
+
+h1 {
+    background-color: rgb(221, 221, 221);
+    font-size: 4rem;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    
+}
+
+
+.container {
+    width: 1200px;
+    margin: 100px auto;
+}
+
+
+
+.boardlist {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    width: 100%;
+    flex-flow: row wrap;
+}
+
+.post-wrap {
+    margin: 20px;
+}
+
+
+
+/* 프로필 영역 */
+.profile {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    /* justify-content: center; */
+    align-items: center;
+    position: relative;
+}
+
+.profile-img {
+
+    display: inline-block;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-img>img {
+    vertical-align: bottom;
+    width: 30px;
+    height: 30px;
+    object-fit: fill;
+}
+
+.nickname {
+    height: 20px;
+    width: fit-content;
+    text-decoration: none;
+    color: black;
+    /* margin-bottom: px auto; */
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 1.6rem;
+
+}
+
+/* 게시글 영역  */
+.post {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+}
+
+.postimg {
+    object-fit: fill;
+    text-decoration: none;
+    width: 300px  !important;
+    height: 300px !important;
+    border-radius: 15px;
+    overflow: hidden;
+    display: inline-block;
+    
+}
+
+.like {
+    /* margin-left: 66px; */
+    color: rgb(111, 111, 111);
+    font-size: 15px;
+    position: absolute;
+    right: 80px;
+}
+
+.view {
+    /* margin-left: 12px; */
+    color: rgb(111, 111, 111);
+    font-size: 15px;
+    position: absolute;
+    right: 30px;
+}
+
+/* 지역  */
+.area {
+	margin-left:10px;
+	color:#2B65F8;
+	font-size: 17px;
+	font-weight: bold;
+	margin-top:5px;
+}
+
+
+/* 글쓰러가기 버튼*/
+.prompt-box {
+    position: relative;
+    display: flex;
+    border: 1px solid #ccc;
+    margin: 100px auto;
+    width: 100%;
+    height: 100px;
+    border-radius: 16px;
+    background-color: #F5F5F5;
+    text-align: center;
+    overflow: hidden;
+}
+
+.prompt-message {
+    position: absolute;
+    left: 30px;
+    top: 30%;
+    text-align: left;
+    font-size: 15px;
+    /* font-family: serif; */
+    overflow: hidden;
+
+}
+
+.writeBtn {
+    width: 120x;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    background-color: #2B65F8;
+    border: none;
+    border-radius: 20px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-size: 13px;
+    color: white;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    padding: 10px;
+}
+
+
+/* 페이지네이션 */
+
+#pagination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pagination ul {
+
+    list-style: none;
+    /* 글자의 가로 중앙 정렬 */
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+#pagination ul>li {
+    float: left;
+
+    width: 40px;
+    height: 30px;
+    /* border: 1px solid palevioletred; */
+
+    /* 글자의 세로높이를 중앙으로 정렬 */
+    line-height: 30px;
+    cursor: pointer;
+    
+    margin-bottom: 100px;
+}
+
+.Prev,
+.Next {
+    width: 70px !important;
+    color: #2B65F8;
+}
+
+.Prev,
+.Next > a {
+    text-decoration: none;
+}
+
+
+.current {
+    color: #2B65F8;
+}

@@ -1,0 +1,207 @@
+@charset "utf8";
+
+body {
+  justify-content: center;
+  align-items: center;
+ 
+}
+main {
+	width: 30%;
+    margin: 250px auto;
+  flex-direction: row;
+  justify-content: center;
+}
+
+form input[type=text],
+form input[type=password] {
+  border: none;
+  outline: none;
+
+  padding: 1rem 1.2rem;
+  font-size: 1.5rem;
+}
+
+fieldset {
+  flex-direction: column;
+  width : 120%;
+  padding: 3rem;
+  margin: auto;
+}
+
+.user-area {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0.3rem 1rem;
+}
+
+.user-area label {
+  width: 8%;
+
+  display: flex;
+  justify-content: center;
+
+  font-size: 1.5  rem;
+}
+
+.user-area > input {
+  width: 95%;
+}
+
+
+#hr-line {
+  height: 5rem;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 5rem;
+}
+
+#hr-line div {
+  display: inline-block;
+}
+
+.hr-line {
+  height: 1px;
+  width: 100px;
+  vertical-align: middle;
+
+  background-color: var(--color-gray);
+}
+
+.hr-txt {
+  font-size: 1.5rem;
+}
+
+.sns-signin {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sns-signin button {
+  width: 50px;
+  height: 50px;
+
+  cursor: pointer;
+}
+
+#google-signin,
+#naver-signin,
+#kakao-signin {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#google-signin img,
+#naver-signin img,
+#kakao-signin img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+/* color: color-constrast(aquamarine vs pink, yellow, green); */
+/* accent-color: white; */
+
+:root {
+  --color-white: #eee ;
+  --color-light-gray: lightgray;
+  --color-gray: gray;
+  --color-dark-gray: darkslategray;
+
+  --color-skyblue: skyblue;
+  --color-mark-blue: #2B65F8;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul, li, ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.sign {
+	text-align : center;
+	margin-top : 30px;
+}
+
+.signBtn {
+	align-items: center;
+	width: 70%;
+  margin-top: -20px;
+  margin-bottom: 20px;
+	font-size : 20px;
+  height: 55px;
+ 	cursor: pointer;
+ 	
+  background-color: rgb(0, 98, 231);
+  color:#fff;
+  border:none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* .signBtn:hover{
+  background: rgb(0, 98, 231);
+} */
+
+.rememberme {
+  position: relative;
+	/* display: flex; */
+	align-items: center;
+	width: 100%;
+	font-size: 15px;
+	height : 30px;
+	padding: 0.3rem 1rem;
+}
+
+.rememberme a,
+.find a {
+  margin-right: 20px;
+}
+
+
+.rememberme input[type="checkbox"] {
+	display : inline-block;
+	width: 17px; /* 원하는 가로 크기로 조절 */
+ 	height: 17px;
+	margin-left: 20px;
+	cursor: pointer;
+	vertical-align: middle;
+	align-items: center;
+	margin-top : 2px;
+	
+}
+
+.find {
+  position: relative;
+  /* display: flex; */
+	align-items: center;
+	width: 100%;
+	font-size: 15px;
+	height : 30px;
+	padding: 0.3rem 1rem;
+  color: grey;
+}
+
+legend h3 {
+  font-size: 20px;
+}

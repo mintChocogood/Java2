@@ -1,0 +1,298 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+.board_wrap {
+    width: 1000px;
+    margin: 100px auto;
+    font-size: 0;
+}
+
+.board_title {
+    margin-bottom: 30px;
+}
+
+.board_title h2>strong{
+    font-size: 3rem;
+}
+
+.board_trans_condition {
+    width :100%;
+    border-top: 2px solid blue;
+    padding-top: 20px;
+    /* border-bottom : 2px solid blue; */
+    padding-bottom: 20px;
+}
+.board_trans_condition_area {
+    font-size: 0;
+}
+
+.board_trans_condition fieldset {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* font-size: 0; */
+}
+
+.board_trans_condition legend {
+    margin-left: 10%;
+    font-size: 1.5rem;
+}
+
+
+.board_trans_condition div.title::before {
+    content: "";
+    position: absolute;
+    top: 22%;
+    right: 0;
+    display: block;
+    width: 1px;
+    height: 60%;
+    background: #636363;
+}
+
+.board_trans_condition div.title {
+    display: inline-block;
+    font-size: 2rem;
+    margin-right: 4%;
+    width: 10%;
+    text-align: center;
+    position: relative;
+}
+
+
+
+.board_trans_condition_area {
+    width: 100%;
+    margin-bottom: 10px; /* 버튼 사이의 하단 마진 설정 */
+    
+  }
+
+  .board_trans_condition_area button {
+    width: 10.0% ;
+    margin-right: 2%;
+    margin-bottom: 10px; /* 버튼 사이의 하단 마진 설정 */
+    font-size: 1.5rem;
+  }
+
+  .board_trans_condition_date {
+    /* margin-left: 20px; */
+    /* width :66%; */
+    margin-bottom: 20px;
+  }
+
+
+/* ----------------------- */
+.board_trans_condition_date span {
+    font-size: 1.5rem;
+    margin-right: 2%;
+    font-weight: 548;
+}
+
+/* .board_trans_condition_date span:nth-of-type(1) {
+    margin-left: 3%;
+} */
+
+
+.board_trans_condition_date input {
+    margin-right: 2%;
+    font-size: 1.5rem;
+}
+
+.board_trans_condition_person {
+    margin-bottom: 15px;
+    /* display: inline-block; */
+    align-items: center;
+}
+.board_trans_condition_person >select {
+    width: 10%;
+    font-size: 1.5rem;
+    flex-grow: 1;
+    margin-right: 2%;
+    display: inline-block;
+}
+
+.board_trans_condition input[type="submit"] {
+    width: 5%;
+    display: inline-block;
+    font-size: 1.5rem;
+    position: relative;
+    margin-left: 6%;
+}
+
+
+
+/* list */
+.board_list {
+    width: 100%;
+    border-top: 2px solid black;
+}
+
+.board_list>div {
+    border-bottom: 1px solid #ddd;
+    font-size: 0;
+}
+
+.board_list >div.top {
+    border-bottom: 1px solid #000;
+    /* text-align: center; */
+}
+
+.board_list>div:last-child {
+    border-bottom: 1px solid #000;
+}
+.board_list_post >div {
+    font-size: 0;
+}
+
+
+.board_list_post  >div > div {
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+.board_list > div.top >div{
+    font-weight: 600;
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.board_list > div.top >.num {
+    width: 7%;
+}
+.board_list > div.top >.title {
+    width: 20%;
+    text-align: center;
+}
+.board_list > div.top >.writer {
+    width: 10%;
+    
+}
+.board_list > div.top >.area {
+    width: 7%;
+}
+.board_list > div.top >.status {
+    width: 10%;
+}
+.board_list > div.top .result {
+    width: 25%;
+}
+.board_list > div.top >.member {
+    width: 10%;
+}
+.board_list > div.top >.currmem {
+    width: 10%;
+}
+
+/* ---------------------------- */
+.board_list_post .num {
+    width: 7%;
+}
+
+.board_list_post .title {
+    width: 20%;
+    padding-left : 20px;
+    text-align: left;
+}
+
+
+.board_list_post .writer {
+    width: 10%;
+}
+
+.board_list_post .area {
+    width: 7%;
+}
+.board_list_post  .status {
+    width: 10%;
+}
+.board_list_post .result {
+    width: 25%;
+}
+.board_list_post .member {
+    width: 10%;
+}
+.board_list_post .currmem {
+    width: 10%;
+}
+
+
+.board_page {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0;
+    padding-bottom: 20px;
+}
+
+.board_page .Prev,
+.board_page .pageNum,
+.board_page .Next {
+    display: inline-block;
+    width: 32px;
+    height: 35px;
+    box-sizing: border-box;
+    border: 1px solid rgb(208, 207, 207) ;
+    border-left: 0;
+    vertical-align: middle;
+    line-height: 100%;
+}
+
+/* .board_page a {
+    display: inline-block;
+    width: 32px;
+    height: 35px;
+    box-sizing: border-box;
+    border: 1px solid rgb(208, 207, 207) ;
+    border-left: 0;
+    vertical-align: middle;
+    line-height: 100%;
+} */
+
+.board_page .Prev,
+.board_page .Next {
+    width: 40px;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    /* << 사이 조정 */
+    letter-spacing: -1px;
+    cursor: pointer;
+}
+
+.board_page .pageNum {
+    padding-top: 9px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+/* .board_page a.num.on {
+    border-color: #2B65F8;
+    background: #2B65F8 ;
+    color: #fff;
+} */
+
+.current {
+    border-color: #2B65F8;
+    background: #2B65F8 ;
+    color: #fff;
+}
+
+.board_page .Prev {
+    border-left: 1px solid rgb(208, 207, 207) ;
+}
+
+.board_page .pageNum {
+    border-left: 1px solid rgb(208, 207, 207) ;
+}
+
